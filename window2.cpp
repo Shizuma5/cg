@@ -9,7 +9,7 @@ void display(void)
   //これらが一つのウィンドウに重なって存在しています. mask に GL_COLOR_BUFFER_BIT を指定したときは, カラーバッファだけが塗りつぶされます.
   glClear(GL_COLOR_BUFFER_BIT);
   glColor3d(1.0, 0.0, 0.0);
-  glBegin(GL_LINE_LOOP);
+  glBegin(GL_POLYGON);
   glVertex2d(-0.9, -0.9);
   glVertex2d(0.9, -0.9);
   glVertex2d(0.9, 0.9);
