@@ -8,6 +8,13 @@ void display(void)
   //カラーバッファの上に重ねて表示されるオーバーレイバッファなど, いくつかのものがあり,
   //これらが一つのウィンドウに重なって存在しています. mask に GL_COLOR_BUFFER_BIT を指定したときは, カラーバッファだけが塗りつぶされます.
   glClear(GL_COLOR_BUFFER_BIT);
+  glColor3d(1.0, 0.0, 0.0);
+  glBegin(GL_LINE_LOOP);
+  glVertex2d(-0.9, -0.9);
+  glVertex2d(0.9, -0.9);
+  glVertex2d(0.9, 0.9);
+  glVertex2d(-0.9, 0.9);
+  glEnd();
 
   //glFlush() はまだ実行されていない OpenGL の命令を全部実行します.
   //OpenGL は関数呼び出しによって生成される OpenGL の命令をその都度実行するのではなく, いくつか溜め込んでおいてまとめて実行します.
